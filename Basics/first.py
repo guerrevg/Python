@@ -1,2 +1,2 @@
 print("ram")
-print(" Hello World ")
+print("Hello World")

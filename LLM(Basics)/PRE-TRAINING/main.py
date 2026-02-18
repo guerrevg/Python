@@ -49,7 +49,7 @@ token_ids = generate_text_simple(
 
 
 
-with open('/Volumes/DartStorm/Offensive/Books/Coding 2026 Books/data.txt', "r", encoding="utf-8") as file:
+with open("data.txt", "r", encoding="utf-8") as file:
     text_data = file.read()
 # First 100 characters
 print(text_data[:99])

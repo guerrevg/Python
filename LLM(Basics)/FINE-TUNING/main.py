@@ -1,7 +1,6 @@
 import json
 
-
-file_path = "/Users/dartstorm/Desktop/Github/Python/LLm/WEIGHT-LOADING/instruction-data.json"
+file_path = "../../WEIGHT-LOADING/instruction-data.json"
 
 with open(file_path, "r") as file:
     data = json.load(file)

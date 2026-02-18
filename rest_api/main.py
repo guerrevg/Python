@@ -65,19 +65,48 @@ def get_destination(destination_id):
 @app.route("/destinations", methods=["POST"])
 def add_destination():
     """Add a new destination.
-    
+
     Expected JSON:
     {
         "destination": "Paris",
-        "country": "France", 
+        "country": "France",
         "rating": 4.8
     }
     """
     data = request.get_json()
+
+    # Validate required fields
+    if not data:
+        return jsonify({"error": "No data provided"}), 400
+
+    if "destination" not in data or not data["destination"]:
+        return jsonify({"error": "Destination name is required"}), 400
+
+    if "country" not in data or not data["country"]:
+        return jsonify({"error": "Country is required"}), 400
+
+    if "rating" not in data:
+        return jsonify({"error": "Rating is required"}), 400
+
+    # Validate rating range
+    try:
+        rating = float(data["rating"])
+        if rating < 0 or rating > 5:
+            return jsonify({"error": "Rating must be between 0 and 5"}), 400
+    except (ValueError, TypeError):
+        return jsonify({"error": "Rating must be a number"}), 400
+
+    # Validate string lengths
+    if len(data["destination"]) > 100:
+        return jsonify({"error": "Destination name too long (max 100 characters)"}), 400
+
+    if len(data["country"]) > 50:
+        return jsonify({"error": "Country name too long (max 50 characters)"}), 400
+
     new_destination = Destination(
         destination=data["destination"],
         country=data["country"],
-        rating=data["rating"]
+        rating=rating
     )
     db.session.add(new_destination)
     db.session.commit()
@@ -104,15 +133,42 @@ def update_destination(destination_id):
 def delete_destination(destination_id):
     """Delete a destination."""
     destination = Destination.query.get(destination_id)
-    
+
     if destination:
         db.session.delete(destination)
         db.session.commit()
         return jsonify({"message": "Destination deleted successfully"})
-    
+
     return jsonify({"error": "Destination not found"}), 404
 
 
+# Custom error handlers
+@app.errorhandler(404)
+def not_found(error):
+    """Handle 404 errors."""
+    return jsonify({"error": "Not found", "message": "The requested resource was not found"}), 404
+
+
+@app.errorhandler(500)
+def internal_error(error):
+    """Handle 500 errors with database rollback."""
+    db.session.rollback()
+    return jsonify({"error": "Internal server error", "message": "An unexpected error occurred"}), 500
+
+
+@app.errorhandler(400)
+def bad_request(error):
+    """Handle 400 errors."""
+    return jsonify({"error": "Bad request", "message": "The request was invalid"}), 400
+
+
 if __name__ == "__main__":
-    # Run the Flask development server
-    app.run(debug=True)
+    import os
+    # Use environment variable for debug mode (default to False for production)
+    debug_mode = os.environ.get("FLASK_DEBUG", "False").lower() == "true"
+    print(f"\n🚀 Starting Travel Destinations API")
+    print(f"📍 Server: http://127.0.0.1:5000")
+    print(f"📖 Docs: http://127.0.0.1:5000/destinations")
+    print(f"🔧 Debug mode: {debug_mode}")
+    print(f"\n⚠️  Set FLASK_DEBUG=true to enable debug mode\n")
+    app.run(debug=debug_mode)

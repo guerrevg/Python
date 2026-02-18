@@ -1,4 +1,4 @@
-a=int(input("Enter the First Number : "))
-b=int(input("Enter the Second Number : "))
-c = (a+b)/2
-print(f"Avg of {a} and {b} is {c}")
+first_number = int(input("Enter the First Number : "))
+second_number = int(input("Enter the Second Number : "))
+average = (first_number + second_number) / 2
+print(f"Avg of {first_number} and {second_number} is {average}")

@@ -7,22 +7,22 @@ Write a python function to print first n lines of the following pattern:
 '''
 
 # Type1
-def patt(n):
-    if(n==0):
+def pattern_recursive(rows):
+    if(rows == 0):
         return
     else:
-        print("*" * n)
-        patt(n-1)
-p = patt(3)
+        print("*" * rows)
+        pattern_recursive(rows - 1)
+result = pattern_recursive(3)
 
 
 # Type2
-def pattern(n):
-    for i in range(1,n+1):         
-        print(f"*" * ((n+1)-i))
+def pattern_iterative(total_rows):
+    for row in range(1, total_rows + 1):
+        print(f"*" * ((total_rows + 1) - row))
 
-n = int(input("Enter the 'n' : "))
-pattern(n)
+total_rows = int(input("Enter the 'n' : "))
+pattern_iterative(total_rows)
 
 
 

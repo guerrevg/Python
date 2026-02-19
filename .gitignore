@@ -287,3 +287,6 @@ Dockerfile
 *.tar.gz
 *.rar
 *.7z
+MANUAL_*.md
+*_PROGRESS.md
+*_ENHANCEMENT_*.md

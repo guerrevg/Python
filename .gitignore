@@ -213,6 +213,9 @@ temp_files/
 *_PLAN*.md
 *_REPORT*.md
 *_REVIEW*.md
+*_PROGRESS*.md
+*_ENHANCEMENT*.md
+*_DOCUMENTED.md
 ISSUE_*.md
 CREATE_*.md
 BATCH_*.md

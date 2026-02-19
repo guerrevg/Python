@@ -390,9 +390,6 @@ A huge thank you to everyone who has contributed to making this project better!
   </tr>
 </table>
 
-### 🎖️ Contributor Graph
-
-[![Contributors](https://contrib.rocks/image?repo=hackdartstorm/Python&max=100&columns=10)](https://github.com/hackdartstorm/Python/graphs/contributors)
 
 **Want to be here?** [Make your first contribution!](https://github.com/hackdartstorm/Python/issues?q=is%3Aopen+label%3A%22good+first+issue%22)
 

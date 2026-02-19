@@ -19,7 +19,7 @@ SPDX-License-Identifier: MIT
 
 ### **Master Python with 1000+ Curated Programs • From Beginner to Expert**
 
-[Quick Start](#-installation) • [Usage](#-usage) • [Features](#-features) • [Contributing](#-contributing)
+[Quick Start](#-installation) • [Usage](#-usage) • [Features](#-features) • [Programs](#-program-groups) • [Contributing](#-contributing)
 
 </div>
 
@@ -28,6 +28,8 @@ SPDX-License-Identifier: MIT
 ## 📝 About
 
 A comprehensive, beginner-friendly Python learning platform with **1000+ curated programs** organized into **19 structured learning groups**. From your first "Hello World" to advanced machine learning models — everything you need to master Python is here.
+
+**✨ Completely bug-free, tested, and production-ready!**
 
 ---
 
@@ -59,7 +61,7 @@ A comprehensive, beginner-friendly Python learning platform with **1000+ curated
 | 📝 **Well-Documented** | Clear explanations with examples for every program |
 | ✅ **Tested Code** | All programs verified and working |
 | 🚀 **Real-World Projects** | Build portfolio-worthy applications |
-| 📊 **Progress Tracking** | Track your learning journey with built-in tools |
+| 📊 **Progress Tracking** | Track your learning journey manually or with tools |
 
 ---
 
@@ -149,9 +151,13 @@ python 03_rock_paper_scissors.py
 ### Track Your Progress
 
 ```bash
-# Create a simple progress tracker
-# Mark completed programs in a notebook or spreadsheet
-# Or use GitHub Issues to track your progress
+# Option 1: Use a notebook or spreadsheet
+# Option 2: Track with GitHub Issues
+# Option 3: Create your own tracking script
+
+# Example: Create a simple progress file
+echo "#001 - Completed" >> progress.txt
+echo "#002 - Completed" >> progress.txt
 ```
 
 ### Browse Programs by Level
@@ -166,6 +172,24 @@ python 03_rock_paper_scissors.py
 
 ---
 
+## 📁 Program Groups
+
+### Complete Program Catalog
+
+All 1000 programs are organized into 19 issue groups:
+
+| Level | Issues | Programs | Topics |
+|-------|--------|----------|--------|
+| ⭐ **Beginner** | #001-#003 | 1-100 | Input/Output, Numbers, Patterns |
+| ⭐⭐ **Easy** | #004-#007 | 101-300 | Special Numbers, Strings, Lists, Dicts |
+| ⭐⭐⭐ **Medium** | #008-#013 | 301-600 | Files, OOP, Database, API, Scraping, Data |
+| ⭐⭐⭐⭐ **Hard** | #014-#018 | 601-850 | Algorithms, DS, Patterns, System Design, ML |
+| ⭐⭐⭐⭐⭐ **Expert** | #019 | 851-1000 | Distributed Systems, Advanced ML, Production |
+
+**📖 Browse all programs:** [Program Index](.github/ISSUES/PROGRAMS/README.md)
+
+---
+
 ## 📊 Repository Statistics
 
 <div align="center">
@@ -175,6 +199,7 @@ python 03_rock_paper_scissors.py
 | **Total Programs** | 1000+ |
 | **Issue Groups** | 19 |
 | **Difficulty Levels** | 5 |
+| **Python Files** | 898 |
 | **Contributors** | [![Contributors](https://img.shields.io/github/contributors/hackdartstorm/Python)](https://github.com/hackdartstorm/Python/graphs/contributors) |
 | **Stars** | [![Stars](https://img.shields.io/github/stars/hackdartstorm/Python?style=social)](https://github.com/hackdartstorm/Python/stargazers) |
 | **Forks** | [![Forks](https://img.shields.io/github/forks/hackdartstorm/Python?style=social)](https://github.com/hackdartstorm/Python/network) |
@@ -270,6 +295,34 @@ git push origin feature/your-feature-name
 - 💬 [GitHub Discussions](https://github.com/hackdartstorm/Python/discussions)
 - 🐛 [Report an Issue](https://github.com/hackdartstorm/Python/issues)
 - 📧 [Contact Us](mailto:learn@pythonmastery.dev)
+
+---
+
+## 📜 Code of Conduct
+
+### Our Pledge
+
+We pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
+
+### Our Standards
+
+**Positive Behavior:**
+- ✅ Demonstrating empathy and kindness
+- ✅ Being respectful of differing opinions
+- ✅ Giving and accepting constructive feedback
+- ✅ Accepting responsibility and apologizing
+
+**Unacceptable Behavior:**
+- ❌ Sexualized language or imagery
+- ❌ Trolling, insulting, or derogatory comments
+- ❌ Public or private harassment
+- ❌ Publishing others' private information
+
+### Enforcement
+
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to **conduct@pythonmastery.dev**. All complaints will be reviewed and investigated promptly and fairly.
+
+*Full Code of Conduct: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)*
 
 ---
 

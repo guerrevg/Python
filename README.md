@@ -349,7 +349,7 @@ A huge thank you to everyone who has contributed to making this project better!
         <sub><b>hackdartstorm</b></sub>
       </a>
       <br />
-      <sub>122 contributions</sub>
+      <sub>Project Creator & Maintainer</sub>
     </td>
     <td align="center">
       <a href="https://github.com/guerrevg">
@@ -358,7 +358,7 @@ A huge thank you to everyone who has contributed to making this project better!
         <sub><b>guerrevg</b></sub>
       </a>
       <br />
-      <sub>1 contribution</sub>
+      <sub>Contributor</sub>
     </td>
     <td align="center">
       <a href="https://github.com/aldomelpignano">
@@ -367,7 +367,25 @@ A huge thank you to everyone who has contributed to making this project better!
         <sub><b>aldomelpignano</b></sub>
       </a>
       <br />
-      <sub>1 contribution</sub>
+      <sub>Contributor</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Rey-han-24">
+        <img src="https://avatars.githubusercontent.com/u/193631115?v=4" width="100px;" alt="Rey-han-24"/>
+        <br />
+        <sub><b>Rey-han-24</b></sub>
+      </a>
+      <br />
+      <sub>Contributor</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Samprithajgowda">
+        <img src="https://avatars.githubusercontent.com/u/193631116?v=4" width="100px;" alt="Samprithajgowda"/>
+        <br />
+        <sub><b>Samprithajgowda</b></sub>
+      </a>
+      <br />
+      <sub>Contributor</sub>
     </td>
   </tr>
 </table>

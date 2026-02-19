@@ -338,17 +338,41 @@ We welcome contributions of all kinds! Here's how you can help:
 
 A huge thank you to everyone who has contributed to making this project better!
 
-### 🌟 Top Contributors
+### 🌟 All Contributors
 
-| Contributor | Contributions |
-|-------------|---------------|
-| [@hackdartstorm](https://github.com/hackdartstorm) | 124+ |
-| [@Samprithajgowda](https://github.com/Samprithajgowda) | 1+ |
-| [@Rey-han-24](https://github.com/Rey-han-24) | 1+ |
-| [@guerrevg](https://github.com/guerrevg) | 1+ |
-| [@aldomelpignano](https://github.com/aldomelpignano) | 1+ |
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/hackdartstorm">
+        <img src="https://avatars.githubusercontent.com/u/246549462?v=4" width="100px;" alt="hackdartstorm"/>
+        <br />
+        <sub><b>hackdartstorm</b></sub>
+      </a>
+      <br />
+      <sub>122 contributions</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/guerrevg">
+        <img src="https://avatars.githubusercontent.com/u/262503087?v=4" width="100px;" alt="guerrevg"/>
+        <br />
+        <sub><b>guerrevg</b></sub>
+      </a>
+      <br />
+      <sub>1 contribution</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/aldomelpignano">
+        <img src="https://avatars.githubusercontent.com/u/245438599?v=4" width="100px;" alt="aldomelpignano"/>
+        <br />
+        <sub><b>aldomelpignano</b></sub>
+      </a>
+      <br />
+      <sub>1 contribution</sub>
+    </td>
+  </tr>
+</table>
 
-### 🎖️ All Contributors
+### 🎖️ Contributor Graph
 
 [![Contributors](https://contrib.rocks/image?repo=hackdartstorm/Python&max=100&columns=10)](https://github.com/hackdartstorm/Python/graphs/contributors)
 

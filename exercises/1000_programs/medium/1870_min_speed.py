@@ -4,7 +4,7 @@ def minSpeedOnTime(dist, hour):
     # If it's impossible to cover all trains even at infinite speed
     # (need at least 1 hour per train except the last one)
     if len(dist) - 1 >= hour:
-        return -1  
+        return -1
     left, right = 1, 10**7
     ans = -1
     while left <= right:

@@ -37,11 +37,11 @@ def maxHappyGroups(batchSize, groups):
             
         for i in range(1, batchSize):
             if counts[i] > 0:
-                new_counts = list(counts)
-                new_counts[i] -= 1
+                # Create a new tuple state with counts[i] decremented, avoiding list conversion
+                new_counts = counts[:i] + (counts[i] - 1,) + counts[i + 1:]
                 
                 is_happy = 1 if current_rem == 0 else 0
-                res = is_happy + dfs((current_rem + i) % batchSize, tuple(new_counts))
+                res = is_happy + dfs((current_rem + i) % batchSize, new_counts)
                 max_val = max(max_val, res)
                 
         return max_val
